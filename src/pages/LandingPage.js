@@ -11,7 +11,7 @@ export default function LandingPage() {
             </div>
             <CornerBtn
                 id="projectRepo"
-                href="https://github.com/6MA-606/INT102-Diary-Project"
+                href="https://github.com/6MA-606/REVISUALIZE-Diary-Project"
                 target="_blank"
                 bg="#fff"
                 icon="Github"
@@ -22,7 +22,7 @@ export default function LandingPage() {
                 <img className={ styles.camera } src="./src/img/camera.png" alt="Camera" />
                 <div className={ styles.landingText }>
                     <div>Welcome to my diary</div>
-                    <div>"<span id="shutter">Shutter!</span> and come with me."</div>
+                    <div>"<span className={ styles.shutter }>Shutter!</span> and come with me."</div>
                 </div>
                 <div className={ styles.transitionBg }></div>
             </div>

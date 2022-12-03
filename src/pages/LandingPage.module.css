@@ -29,21 +29,21 @@ body {
     cursor: pointer;
 }
 
-#shutter {
+.shutter {
     display: inline-block;
     cursor: pointer;
     transition: .25s;
     /* border-radius: 5px; */
 }
 
-#shutter:hover {
+.shutter:hover {
     transform: scale(1.2);
     /* background-color: #fff; */
     padding: 0 10px;
     /* letter-spacing: .1em; */
 }
 
-#shutter:active {
+.shutter:active {
     transform: scale(0.8);
     /* background-color: #fff; */
     /* padding: 0 10px; */
