@@ -1,0 +1,35 @@
+.spinFilm {
+    background-color: transparent;
+    width: 13vw;
+    perspective: 1000px;
+}
+
+.film {
+    width: inherit;
+    filter: drop-shadow(0px 6px 10px #2525253f);
+    transform: translateY(-50%);
+}
+
+.spinFilmInner {
+    transform-style: preserve-3d;
+    animation: film-spin 2.5s linear infinite forwards;
+}
+
+.spinFilmFront,
+.spinFilmBack {
+    position: absolute;
+    width: 100%;
+    height: min-content;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.spinFilmBack {
+    transform: rotateY(180deg);
+}
+
+@keyframes film-spin {
+    0% { transform: rotateY(0deg); }
+    50% { transform: rotateY(180deg); }
+    100% { transform: rotateY(360deg); }
+}

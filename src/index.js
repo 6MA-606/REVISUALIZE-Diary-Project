@@ -4,11 +4,17 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { BrowserRouter ,Routes , Route} from "react-router-dom";
+import LandingPage from './pages/LandingPage';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <BrowserRouter>
+  <Routes>
+    <Route path="/" element={<LandingPage />} />
+    <Route path="/polaroid" element={<App />} />
+  </Routes>
+</BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
